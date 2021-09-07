@@ -1,11 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import VoteComponent from './src/components/VoteComponent';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.SafeAreaView}>
-      <Text>Hello world</Text>
+      <VoteComponent />
     </SafeAreaView>
   );
 };
