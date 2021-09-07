@@ -52,10 +52,12 @@ const styles = StyleSheet.create({
     marginRight: '6%',
     textAlignVertical: 'center',
     fontSize: 20,
+    fontFamily: 'Poppins-Medium',
   },
   labelStyles: {
     marginLeft: '6%',
     fontSize: 20,
+    fontFamily: 'Poppins-Medium',
   },
   progressContent: {
     flexDirection: 'row',

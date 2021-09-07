@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
     fontSize: 36,
     width: '95%',
     marginTop: 20,
+    fontFamily: 'Poppins-Bold',
   },
   submitButton: {
     width: '100%',
@@ -120,6 +121,7 @@ const styles = StyleSheet.create({
   submitText: {
     color: 'white',
     fontSize: 24,
+    fontFamily: 'Poppins-Medium',
   },
   progressRow: {
     margin: 10,
