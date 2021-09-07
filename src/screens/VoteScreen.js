@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Container, Grid, Row} from 'native-base';
 import ProgressBar from '../components/ProgressBar';
 
@@ -44,8 +44,8 @@ const VoteComponent = () => {
           <Grid>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity
-                disabled={isVoteSubmitted}
-                onPress={() => handleYesDefinitely()}>
+                onPress={() => handleYesDefinitely()}
+                disabled={isVoteSubmitted}>
                 <ProgressBar
                   label={'Yes Definitely!'}
                   bgColor={'#E2F9ED'}
@@ -56,10 +56,10 @@ const VoteComponent = () => {
             </Row>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity
-                disabled={isVoteSubmitted}
-                onPress={() => handleMaybeCount()}>
+                onPress={() => handleMaybeCount()}
+                disabled={isVoteSubmitted}>
                 <ProgressBar
-                  label={'Yes Definitely!'}
+                  label={'Maybe, in the right context...'}
                   bgColor={'#E2F9ED'}
                   progressWidth={maybeCount}
                   isValueVisible={isVoteSubmitted}
@@ -68,10 +68,10 @@ const VoteComponent = () => {
             </Row>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity
-                disabled={isVoteSubmitted}
-                onPress={() => handleNotReally()}>
+                onPress={() => handleNotReally()}
+                disabled={isVoteSubmitted}>
                 <ProgressBar
-                  label={'Yes Definitely!'}
+                  label={'No, not really!'}
                   bgColor={'#E2F9ED'}
                   progressWidth={notReallyCount}
                   isValueVisible={isVoteSubmitted}
@@ -103,14 +103,14 @@ const VoteComponent = () => {
 export default VoteComponent;
 
 const styles = StyleSheet.create({
+  firstRow: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   pollHeading: {
     fontSize: 36,
     width: '95%',
     marginTop: 20,
-  },
-  firstRow: {
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   submitButton: {
     width: '100%',
