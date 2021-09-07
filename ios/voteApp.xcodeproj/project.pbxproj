@@ -33,6 +33,9 @@
 		84B103B885A14F5A9F5CB9AE /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0AA3D13B78F415591D369EE /* rubicon-icon-font.ttf */; };
 		ABBE029745D544858CCF307F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9C20FC9575249A1A98202BF /* SimpleLineIcons.ttf */; };
 		68C92FFD183244608B261B5E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE95BFDA7DE949539CA13C15 /* Zocial.ttf */; };
+		9648822787D04E79B4F31977 /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC7EEC52DDD34896B44C85CF /* Poppins-Bold.otf */; };
+		80821429E2EF416398C0DA0E /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B53C18654C854D79BE4B6780 /* Poppins-Medium.otf */; };
+		15B49644B87D40D4B9C3AF16 /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBDD2C9C5B947838E241F9F /* Poppins-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		A0AA3D13B78F415591D369EE /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B9C20FC9575249A1A98202BF /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		EE95BFDA7DE949539CA13C15 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC7EEC52DDD34896B44C85CF /* Poppins-Bold.otf */ = {isa = PBXFileReference; name = "Poppins-Bold.otf"; path = "../assets/fonts/Poppins-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B53C18654C854D79BE4B6780 /* Poppins-Medium.otf */ = {isa = PBXFileReference; name = "Poppins-Medium.otf"; path = "../assets/fonts/Poppins-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7CBDD2C9C5B947838E241F9F /* Poppins-Regular.otf */ = {isa = PBXFileReference; name = "Poppins-Regular.otf"; path = "../assets/fonts/Poppins-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,9 @@
 				A0AA3D13B78F415591D369EE /* rubicon-icon-font.ttf */,
 				B9C20FC9575249A1A98202BF /* SimpleLineIcons.ttf */,
 				EE95BFDA7DE949539CA13C15 /* Zocial.ttf */,
+				DC7EEC52DDD34896B44C85CF /* Poppins-Bold.otf */,
+				B53C18654C854D79BE4B6780 /* Poppins-Medium.otf */,
+				7CBDD2C9C5B947838E241F9F /* Poppins-Regular.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -330,6 +339,9 @@
 				84B103B885A14F5A9F5CB9AE /* rubicon-icon-font.ttf in Resources */,
 				ABBE029745D544858CCF307F /* SimpleLineIcons.ttf in Resources */,
 				68C92FFD183244608B261B5E /* Zocial.ttf in Resources */,
+				9648822787D04E79B4F31977 /* Poppins-Bold.otf in Resources */,
+				80821429E2EF416398C0DA0E /* Poppins-Medium.otf in Resources */,
+				15B49644B87D40D4B9C3AF16 /* Poppins-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
