@@ -21,17 +21,32 @@ const VoteComponent = () => {
           <Grid>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity disabled={isVoteSubmitted}>
-                <ProgressBar />
+                <ProgressBar
+                  label={'Yes Definitely!'}
+                  bgColor={'#E2F9ED'}
+                  progressWidth={10}
+                  isValueVisible={isVoteSubmitted}
+                />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity disabled={isVoteSubmitted}>
-                <Text>ProgressBar</Text>
+                <ProgressBar
+                  label={'Yes Definitely!'}
+                  bgColor={'#E2F9ED'}
+                  progressWidth={10}
+                  isValueVisible={isVoteSubmitted}
+                />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity disabled={isVoteSubmitted}>
-                <Text>ProgressBar</Text>
+                <ProgressBar
+                  label={'Yes Definitely!'}
+                  bgColor={'#E2F9ED'}
+                  progressWidth={10}
+                  isValueVisible={isVoteSubmitted}
+                />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={{marginTop: 20, backgroundColor: '#45D3A5'}}>
