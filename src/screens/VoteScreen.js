@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Container, Grid, Row} from 'native-base';
+import ProgressBar from '../components/ProgressBar';
 
 const VoteComponent = () => {
   const [isVoteSubmitted, setIsVoteSubmitted] = useState(false);
@@ -20,7 +21,7 @@ const VoteComponent = () => {
           <Grid>
             <Row size={20} style={styles.progressRow}>
               <TouchableOpacity disabled={isVoteSubmitted}>
-                <Text>ProgressBar</Text>
+                <ProgressBar />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={styles.progressRow}>
