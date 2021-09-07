@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import VoteComponent from './src/components/VoteComponent';
+import VoteComponent from './src/screens/VoteScreen';
 
 const App = () => {
   return (
