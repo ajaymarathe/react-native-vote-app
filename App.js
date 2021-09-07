@@ -1,12 +1,19 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text } from 'react-native';
+import {SafeAreaView, StyleSheet, Text} from 'react-native';
 
 const App = () => {
   return (
-    <View>
-      <Text>hello world</Text>
-    </View>
+    <SafeAreaView style={styles.SafeAreaView}>
+      <Text>Hello world</Text>
+    </SafeAreaView>
   );
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  SafeAreaView: {
+    flex: 1,
+  },
+});
