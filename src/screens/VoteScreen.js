@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Container, Grid, Row} from 'native-base';
@@ -5,6 +6,28 @@ import ProgressBar from '../components/ProgressBar';
 
 const VoteComponent = () => {
   const [isVoteSubmitted, setIsVoteSubmitted] = useState(false);
+  const [yesDefinitelyCount, setYesDefinitelyCount] = useState(0);
+  const [maybeCount, setMaybeCount] = useState(0);
+  const [notReallyCount, setNotReallyCount] = useState(0);
+
+  const handleYesDefinitely = () => {
+    if (yesDefinitelyCount < 100) {
+      setYesDefinitelyCount(yesDefinitelyCount + 1);
+    }
+  };
+
+  const handleMaybeCount = () => {
+    if (maybeCount < 100) {
+      setMaybeCount(maybeCount + 1);
+    }
+  };
+
+  const handleNotReally = () => {
+    if (notReallyCount < 100) {
+      setNotReallyCount(notReallyCount + 1);
+    }
+  };
+
   return (
     <Container>
       <Grid>
@@ -20,31 +43,37 @@ const VoteComponent = () => {
         <Row size={60}>
           <Grid>
             <Row size={20} style={styles.progressRow}>
-              <TouchableOpacity disabled={isVoteSubmitted}>
+              <TouchableOpacity
+                disabled={isVoteSubmitted}
+                onPress={() => handleYesDefinitely()}>
                 <ProgressBar
                   label={'Yes Definitely!'}
                   bgColor={'#E2F9ED'}
-                  progressWidth={10}
+                  progressWidth={yesDefinitelyCount}
                   isValueVisible={isVoteSubmitted}
                 />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={styles.progressRow}>
-              <TouchableOpacity disabled={isVoteSubmitted}>
+              <TouchableOpacity
+                disabled={isVoteSubmitted}
+                onPress={() => handleMaybeCount()}>
                 <ProgressBar
                   label={'Yes Definitely!'}
                   bgColor={'#E2F9ED'}
-                  progressWidth={10}
+                  progressWidth={maybeCount}
                   isValueVisible={isVoteSubmitted}
                 />
               </TouchableOpacity>
             </Row>
             <Row size={20} style={styles.progressRow}>
-              <TouchableOpacity disabled={isVoteSubmitted}>
+              <TouchableOpacity
+                disabled={isVoteSubmitted}
+                onPress={() => handleNotReally()}>
                 <ProgressBar
                   label={'Yes Definitely!'}
                   bgColor={'#E2F9ED'}
-                  progressWidth={10}
+                  progressWidth={notReallyCount}
                   isValueVisible={isVoteSubmitted}
                 />
               </TouchableOpacity>
