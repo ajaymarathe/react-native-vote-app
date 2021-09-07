@@ -29,7 +29,7 @@ const VoteComponent = () => {
   };
 
   return (
-    <Container>
+    <Container style={{backgroundColor: isVoteSubmitted ? '#45D3A5' : 'white'}}>
       <Grid>
         <Row size={40} style={styles.firstRow}>
           <Text
