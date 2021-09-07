@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Dimensions} from 'react-native';
 
 const windowWidth = Dimensions.get('window').width;
 
-const ProgressBar = (bgColor, progressWidth, label, isValueVisible) => {
+const ProgressBar = ({bgColor, progressWidth, label, isValueVisible}) => {
   return (
     <View style={styles.containerStyles}>
       <View
@@ -16,9 +16,19 @@ const ProgressBar = (bgColor, progressWidth, label, isValueVisible) => {
           },
         ]}>
         <View style={styles.progressContent}>
-          <Text style={styles.labelStyles}>{label}</Text>
+          <Text
+            style={[
+              styles.labelStyles,
+              {fontWeight: progressWidth > 0 ? '500' : 'normal'},
+            ]}>
+            {label}
+          </Text>
           {isValueVisible && (
-            <Text style={styles.percentText}>{`${progressWidth}%`}</Text>
+            <Text
+              style={[
+                styles.percentText,
+                {fontWeight: progressWidth > 0 ? '500' : 'normal'},
+              ]}>{`${progressWidth}%`}</Text>
           )}
         </View>
       </View>
@@ -38,6 +48,15 @@ const styles = StyleSheet.create({
     height: '100%',
     textAlign: 'right',
   },
+  percentText: {
+    marginRight: '6%',
+    textAlignVertical: 'center',
+    fontSize: 20,
+  },
+  labelStyles: {
+    marginLeft: '6%',
+    fontSize: 20,
+  },
   progressContent: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -46,16 +65,5 @@ const styles = StyleSheet.create({
     height: '100%',
     borderWidth: 1,
     borderColor: 'lightgrey',
-  },
-  percentText: {
-    marginRight: '6%',
-    textAlignVertical: 'center',
-    fontSize: 20,
-    fontFamily: 'Poppins-Medium',
-  },
-  labelStyles: {
-    marginLeft: '6%',
-    fontSize: 20,
-    fontFamily: 'Poppins-Medium',
   },
 });
